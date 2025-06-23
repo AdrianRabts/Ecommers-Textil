@@ -3,26 +3,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Mi tienda textil{% endblock %}</title>
+    <title>{% block title %}Textiles & algo más{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>🧵 Textiles & algo más</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Productos</a>
-            <a href="#">Carrito</a>
-            <a href="#">Contacto</a>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <h1>🧵 <span class="brand">Textiles & algo más</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                    <li><a href="{% url 'lista_productos' %}">Productos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="main-content container">
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
-        <p>&copy; 2025 Textiles & algo más</p>
+    <footer class="main-footer">
+        <p>&copy; 2025 Textiles & algo más. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

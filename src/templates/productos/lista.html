@@ -4,17 +4,17 @@
 {% block title %}Productos disponibles{% endblock %}
 
 {% block content %}
-<h2>🛍️ Nuestros productos</h2>
+<h2 style="text-align: center;">🛍️ Nuestros productos</h2>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+<div class="productos-grid">
     {% for producto in productos %}
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 12px; width: 250px; background-color: #fff8f4;">
+        <div class="card">
             {% if producto.imagen %}
                 <a href="{% url 'detalle_producto' producto.pk %}">
-                    <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" style="width: 100%; height: auto; border-radius: 8px;">
+                    <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}">
                 </a>
             {% endif %}
-            <h3 style="color: #6d6875;">
+            <h3>
                 <a href="{% url 'detalle_producto' producto.pk %}" style="text-decoration: none; color: inherit;">
                     {{ producto.nombre }}
                 </a>

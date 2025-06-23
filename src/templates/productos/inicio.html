@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 
-{% block title %}Inicio - Tienda Textil{% endblock %}
+{% block title %}Inicio - Textiles & algo más{% endblock %}
 
 {% block content %}
-    <h2>Bienvenido a nuestra tienda de productos textiles</h2>
+<div class="hero">
+    <div class="hero-content">
+        <h2>🧵 Bienvenido a <span class="highlight">Textiles & algo más</span></h2>
+        <p>Descubre nuestra selección de toallas, sábanas y textiles para el hogar, ¡con colores hermosos y tamaños para todos!</p>
+        <a href="{% url 'lista_productos' %}" class="button-55">Explorar productos</a>
+    </div>
+</div>
 {% endblock %}
