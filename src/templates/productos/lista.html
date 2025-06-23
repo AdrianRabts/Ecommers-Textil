@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Productos disponibles{% endblock %}
+
+{% block content %}
+<h2>🛍️ Nuestros productos</h2>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    {% for producto in productos %}
+        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 12px; width: 250px; background-color: #fff8f4;">
+            {% if producto.imagen %}
+                <a href="{% url 'detalle_producto' producto.pk %}">
+                    <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" style="width: 100%; height: auto; border-radius: 8px;">
+                </a>
+            {% endif %}
+            <h3 style="color: #6d6875;">
+                <a href="{% url 'detalle_producto' producto.pk %}" style="text-decoration: none; color: inherit;">
+                    {{ producto.nombre }}
+                </a>
+            </h3>
+            <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+            <a href="{% url 'detalle_producto' producto.pk %}" class="btn">Ver más</a>
+        </div>
+    {% empty %}
+        <p>No hay productos disponibles.</p>
+    {% endfor %}
+</div>
+{% endblock %}
