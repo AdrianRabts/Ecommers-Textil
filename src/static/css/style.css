@@ -1,0 +1,73 @@
+/* Paleta pastel suave para e-commerce textil */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf6f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ffe5d9;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffb4a2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #b5838d;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6d6875;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+footer {
+    background-color: #ffe5d9;
+    color: #6d6875;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #ffb4a2;
+    font-size: 0.9em;
+}
+
+/* Botones generales */
+button, .btn {
+    background-color: #ffcdb2;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffb4a2;
+}
+
+/* Títulos */
+h2 {
+    color: #6d6875;
+}
