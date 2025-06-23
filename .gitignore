@@ -1,27 +1,27 @@
-# Entorno virtual
+# 🐍 Entorno virtual
 venv/
 
-# Archivos compilados de Python
+# 🧠 Archivos compilados de Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Archivos de base de datos locales
+# 🗃️ Base de datos local
 *.sqlite3
 
-# Archivos de entorno y configuración secreta
+# 🔐 Variables de entorno
 .env
 .env.*
 
-# Migraciones basura
+# 🔄 Migraciones basura
 */migrations/*.pyc
 */migrations/__pycache__/
 */migrations/*.log
 
-# Archivos de log
+# 🧾 Logs
 *.log
 
-# Caché y archivos temporales
+# 🗑️ Archivos temporales
 *.cache
 *.pid
 *.seed
@@ -31,18 +31,18 @@ __pycache__/
 *.orig
 *.~
 
-# Archivos de sistema operativo
+# 💻 Archivos del sistema operativo
 .DS_Store
 Thumbs.db
 
-# Configuraciones de editores
+# 🛠️ Configuraciones de IDEs
 .vscode/
 .idea/
 
-# Node.js (por si usas Tailwind, etc.)
+# 📦 Node (si usas Tailwind o npm)
 node_modules/
 dist/
 build/
 
-# Archivos estáticos generados para producción
+# 🌐 Archivos estáticos recolectados para producción
 /staticfiles/
